@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Despedida Rubi 2026
 
-## Getting Started
+Tarjetas de retos interactivas para la despedida de soltero de Rubi.
 
-First, run the development server:
+## Funcionalidades
+
+- **Aleatoria**: saca una tarjeta al azar entre las que quedan sin usar
+- **Ver todas**: desplázate por las 20 tarjetas del mazo
+- **Usar esta tarjeta**: marca una tarjeta como usada (se guarda en `localStorage` del navegador)
+- Las tarjetas usadas no salen en el modo aleatorio y aparecen atenuadas con la etiqueta **USADA**
+
+## Desarrollo local
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Despliegue en Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Sube el repositorio a GitHub
+2. Importa el proyecto en [vercel.com](https://vercel.com)
+3. Despliega (Next.js se detecta automáticamente)
 
-## Learn More
+## Resetear tarjetas
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Pulsa **Resetear** en la barra superior para borrar el historial de tarjetas usadas en este navegador.
