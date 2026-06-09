@@ -58,16 +58,16 @@ export function RandomPicker({ usedIds, isUsed, onUseCard, ready }: RandomPicker
         <div className="random-card-wrap">
           <ChallengeCard challenge={current} used={isUsed(current.id)} compact />
           <div className="card-actions random-actions">
-            <button type="button" className="btn-gold" onClick={drawRandom}>
+            <button type="button" className="btn-random" onClick={drawRandom}>
               Otra aleatoria
             </button>
             {!isUsed(current.id) && (
               <button
                 type="button"
-                className="btn-outline"
+                className="btn-outline btn-mark-used"
                 onClick={() => onUseCard(current.id)}
               >
-                Usar esta tarjeta
+                Marcar esta tarjeta como usada
               </button>
             )}
           </div>

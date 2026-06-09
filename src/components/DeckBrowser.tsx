@@ -25,7 +25,7 @@ export function DeckBrowser({ isUsed, onUseCard }: DeckBrowserProps) {
                   className="btn-gold"
                   onClick={() => onUseCard(challenge.id)}
                 >
-                  Usar esta tarjeta
+                  Marcar esta tarjeta como usada
                 </button>
               )}
             </div>
